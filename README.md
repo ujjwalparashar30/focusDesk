@@ -1,3 +1,15 @@
+## Project Status
+
+This project is under active development. Here are the current tasks and known issues:
+
+### ✅ Improvements Needed
+- Refactor and improve `HeroSectionComponent` for design polish.
+- Update and enhance `WhosUsingComponent` with actual image data.
+
+### 🛠️ Features to Implement
+- [ ] Create and integrate a **Feedback Form** with validation and form submission.
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
