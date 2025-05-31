@@ -1,10 +1,21 @@
 import React, { useState } from 'react'
-import { Bell } from 'lucide-react'
 
-const main_heading = "Book Your Space"
+// Define the type for card data
+interface CardData {
+  title: string;
+  description: string;
+  image: string;
+}
+
+// Define the props type for the Card component
+interface CardProps {
+  card: CardData;
+  color: string;
+}
+
 const sub_heading = "Secure your spot in library across the city, reserve amenities, and join the perfect study environment."
 
-const cardData = [
+const cardData: CardData[] = [
   {
     title: "Library",
     description: "find near by self study centers",
@@ -37,7 +48,7 @@ const cardData = [
   }
 ]
 
-const cardColors = [
+const cardColors: string[] = [
   "bg-green-300",
   "bg-orange-300", 
   "bg-yellow-300",
@@ -46,8 +57,8 @@ const cardColors = [
   "bg-pink-300"
 ]
 
-const Card = ({ card, color }) => {
-  const [imgError, setImgError] = useState(false);
+const Card: React.FC<CardProps> = ({ card, color }) => {
+  const [imgError, setImgError] = useState<boolean>(false);
   
   return (
     <div className={`${color} rounded-2xl p-5 flex flex-col justify-between min-h-[180px] hover:scale-105 transition-all duration-300 cursor-pointer relative overflow-hidden`}>
@@ -74,14 +85,11 @@ const Card = ({ card, color }) => {
           </div>
         )}
       </div>
-      
-      {/* Optional decorative elements for some cards */}
-      
     </div>
   )
 }
 
-const HeroSectionComponent = () => {
+const HeroSectionComponent: React.FC = () => {
   return (
     <div className="min-h-screen bg-white">
       <div className="container mx-auto px-6 py-12">

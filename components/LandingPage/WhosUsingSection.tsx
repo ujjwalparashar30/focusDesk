@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { GraduationCap, HeartHandshake, Building, BookOpen } from "lucide-react"
+import { HeartHandshake, BookOpen } from "lucide-react"
 
 export default function WhosUsingSectionComponent() {
   return (
@@ -8,7 +8,7 @@ export default function WhosUsingSectionComponent() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 mb-4" style={{ fontFamily: 'var(--font-inter)' }}>
-            Who's using Focus Desk?
+            Who`&apos;`s using Focus Desk?
           </h2>
           <p className="text-xl text-slate-600">
             Trusted by students, educators, and institutions worldwide
