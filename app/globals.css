@@ -120,3 +120,40 @@
     @apply bg-background text-foreground;
   }
 }
+
+.resources-swiper {
+  padding-bottom: 50px;
+}
+
+.resources-swiper .swiper-pagination {
+  bottom: 0;
+}
+
+.resources-swiper .swiper-pagination-bullet {
+  background-color: #64748b;
+  opacity: 0.5;
+  width: 12px;
+  height: 12px;
+}
+
+.resources-swiper .swiper-pagination-bullet-active {
+  background-color: #0f172a;
+  opacity: 1;
+}
+
+.resources-swiper .swiper-button-next,
+.resources-swiper .swiper-button-prev {
+  color: #0f172a;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.resources-swiper .swiper-button-next:after,
+.resources-swiper .swiper-button-prev:after {
+  font-size: 16px;
+  font-weight: bold;
+}
+

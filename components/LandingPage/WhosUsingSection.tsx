@@ -3,71 +3,92 @@ import { Badge } from "@/components/ui/badge"
 import { HeartHandshake, BookOpen } from "lucide-react"
 
 export default function WhosUsingSectionComponent() {
+  // Updated image styling with increased width
+  const imageStyles = "w-full h-full object-cover"
+  
   return (
-    <section className="py-20 bg-slate-50">
-      <div className="container mx-auto px-4">
+    <section className="py-10  bg-slate-50">
+      <div className="container mx-auto px">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 mb-4" style={{ fontFamily: 'var(--font-inter)' }}>
-            Who`&apos;`s using Focus Desk?
+            Who&apos;s using Focus Desk?
           </h2>
           <p className="text-xl text-slate-600">
             Trusted by students, educators, and institutions worldwide
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <Card className="bg-blue-50 border-blue-200 hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-4">
-                <img src="/library.png" alt="" />
+          {/* Students Card */}
+          <Card className="bg-blue-50 pt-0 border-blue-200 hover:shadow-lg transition-shadow overflow-hidden">
+            <CardHeader className="pb-4 p-0">
+              <div className="w-full min-h-32 flex items-center justify-center mb-4">
+                <img 
+                  src="/student.png" 
+                  alt="Student" 
+                  className={imageStyles}
+                />
               </div>
-              <CardTitle className="text-slate-800">Students and Self-Learners</CardTitle>
-              <CardDescription className="text-slate-600">
+              <CardTitle className="text-slate-800 text-center">Students and Self-Learners</CardTitle>
+              <CardDescription className="text-slate-600 text-center">
                 Boost Your Productivity: Find the perfect place to study, focus deeply, and stay consistent
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 justify-center">
                 <Badge variant="secondary">Libraries</Badge>
                 <Badge variant="secondary">Focus Mode</Badge>
                 <Badge variant="secondary">Resources</Badge>
               </div>
             </CardContent>
           </Card>
-          <Card className="bg-purple-50 border-purple-200 hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-4">
-                <img src="/mentor.png" alt="" />
+
+          {/* Mentors Card */}
+          <Card className="bg-purple-50 pt-0 border-purple-200 hover:shadow-lg transition-shadow overflow-hidden">
+            <CardHeader className="p-0">
+              <div className="w-full min-h-32 flex items-center justify-center mb-4">
+                <img 
+                  src="/mentor3.png" 
+                  alt="Mentor" 
+                  className={imageStyles}
+                />
               </div>
-              <CardTitle className="text-slate-800">Mentors and Educators</CardTitle>
-              <CardDescription className="text-slate-600">
+              <CardTitle className="text-slate-800 text-center">Mentors and Educators</CardTitle>
+              <CardDescription className="text-slate-600 text-center">
                 Inspire the Next Generation: Guide students with mentorship and real-world strategies
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 justify-center">
                 <Badge variant="secondary">Mentorship</Badge>
                 <Badge variant="secondary">Task Management</Badge>
               </div>
             </CardContent>
           </Card>
-          <Card className="bg-yellow-50 border-yellow-200 hover:shadow-lg transition-shadow">
-            <CardHeader className="flex flex-col items-center">
-              <div className="w-full h-32 rounded-2xl flex items-center justify-center mb-1 bg-amber-300">
-                <img src="/libraryowner.png" alt="" className="w-32 h-32" />
+
+          {/* Colleges Card */}
+          <Card className="bg-yellow-50 pt-0 border-yellow-200 hover:shadow-lg transition-shadow overflow-hidden">
+            <CardHeader className="p-0">
+              <div className="w-full min-h-32 flex items-center justify-center mb-4">
+                <img 
+                  src="/libraryownerwb.png" 
+                  alt="College Representative" 
+                  className={imageStyles}
+                />
               </div>
-              <CardTitle className="text-slate-800">Colleges and Study Clubs</CardTitle>
-              <CardDescription className="text-slate-600">
+              <CardTitle className="text-slate-800 text-center">Colleges and Study Clubs</CardTitle>
+              <CardDescription className="text-slate-600 text-center">
                 Empower Academic Success: Partner with Focus Desk to bring structured, distraction-free environments to students
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 justify-center">
                 <Badge variant="secondary">Library Booking System</Badge>
                 <Badge variant="secondary">Mentorship Programs</Badge>
               </div>
             </CardContent>
           </Card>
         </div>
+
         {/* Trusted By Section */}
         <div className="text-center">
           <h3 className="text-2xl font-semibold text-slate-800 mb-8">Trusted By</h3>

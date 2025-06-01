@@ -21,14 +21,14 @@ const HeaderComponent = () => {
               <Link href="#libraries" className="text-slate-600 hover:text-blue-600 transition-colors">
                 Libraries
               </Link>
-              <Link href="#events" className="text-slate-600 hover:text-blue-600 transition-colors">
-                Events
+              <Link href="#mentorship" className="text-slate-600 hover:text-blue-600 transition-colors">
+                Mentorship
               </Link>
-              <Link href="#membership" className="text-slate-600 hover:text-blue-600 transition-colors">
-                Membership
+              <Link href="#resources" className="text-slate-600 hover:text-blue-600 transition-colors">
+                Resources
               </Link>
-              <Link href="#about" className="text-slate-600 hover:text-blue-600 transition-colors">
-                More
+              <Link href="#plans" className="text-slate-600 hover:text-blue-600 transition-colors">
+                Plans
               </Link>
             </div>
 

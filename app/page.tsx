@@ -4,6 +4,8 @@ import WhosUsingSectionComponent from "@/components/LandingPage/WhosUsingSection
 import FeaturesSectionComponent from "@/components/LandingPage/FeatureSectionComponent"
 import PricingSectionComponent from "@/components/LandingPage/PricingSectionComponent"
 import CtaSectionComponent from "@/components/LandingPage/CtaSectionComponent"
+import ResourcesSectionComponent from "@/components/LandingPage/ResourceSectionComponent"
+import MentorsShowcaseComponent from "@/components/LandingPage/MentorsShowcaseComponent"
 
 
 export default function LandingPage() {
@@ -12,6 +14,8 @@ export default function LandingPage() {
       <HeroSectionComponent />
       <WhosUsingSectionComponent />
       <FeaturesSectionComponent />
+      <MentorsShowcaseComponent />
+      <ResourcesSectionComponent />
       <PricingSectionComponent />
       <CtaSectionComponent />
     </div>
