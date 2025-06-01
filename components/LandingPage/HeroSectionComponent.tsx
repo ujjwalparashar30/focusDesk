@@ -91,7 +91,7 @@ const Card: React.FC<CardProps> = ({ card, color }) => {
 
 const HeroSectionComponent: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white px-10">
       <div className="container mx-auto px-6 py-12">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Side: Text Content */}

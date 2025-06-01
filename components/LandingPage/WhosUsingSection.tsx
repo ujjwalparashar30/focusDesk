@@ -7,7 +7,7 @@ export default function WhosUsingSectionComponent() {
   const imageStyles = "w-full h-full object-cover"
   
   return (
-    <section className="py-10  bg-slate-50">
+    <section className="py-10  bg-slate-50 px-12">
       <div className="container mx-auto px">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 mb-4" style={{ fontFamily: 'var(--font-inter)' }}>
